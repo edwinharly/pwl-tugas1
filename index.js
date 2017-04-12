@@ -3,6 +3,7 @@ const app = express()
 const fs = require('fs')
 // const pug = require('pug')
 
+app.set('views', './views')
 app.set('view engine', 'pug')
 
 app.get('/', (req, res) => {
