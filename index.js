@@ -1,9 +1,14 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
+//const pug = require('pug')
+
+
 
 app.get('/', (req, res) => {
     let judul = ''
+    //let compiledFunction = pug.compileFile('home.pug')
+
     fs.readdir('cerita/', 'utf8', (err, files) => {
         if (err) {
             throw err
