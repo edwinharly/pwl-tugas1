@@ -1,0 +1,8 @@
+html
+	head
+		title 'Kumpulan Cerita'
+	body
+		ul
+			each file in files
+				li
+					a(href= '/'+file.split('.')[0]) #{file.split('.')[0]}
